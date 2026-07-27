@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IDRIS ODEJAYI - Event Decorator Lagos</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+    body{background:#0a0a0a;color:#fff;font-family:'Segoe UI',Arial,sans-serif;padding:20px}
+    
+    .hero{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);padding:70px 20px;text-align:center;border-radius:20px;margin-bottom:40px}
+    .hero h1{font-size:2.6rem;margin-bottom:12px}
+    .hero p{font-size:1.1rem;opacity:0.9;margin-bottom:25px}
+    .hero span{color:#00ff88;font-weight:bold}
+    
+    nav{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+    nav a{color:#fff;text-decoration:none;font-weight:600;padding:10px 18px;border-radius:10px;background:rgba(0,0,0,0.25);transition:0.3s}
+    nav a:hover{background:#00ff88;color:#000}
+    
+    h2{color:#00ff88;margin-bottom:20px;font-size:1.8rem;text-align:center}
+    section{margin-bottom:60px;max-width:1100px;margin-left:auto;margin-right:auto}
+    
+    .about{background:#1a1a1a;padding:30px;border-radius:14px;border:1px solid #333;line-height:1.8;text-align:center;font-size:1.05rem}
+    
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+    
+    .card{background:#1a1a1a;border-radius:14px;border:1px solid #333;overflow:hidden;transition:0.3s}
+    .card:hover{border-color:#00ff88;transform:translateY(-5px)}
+    .card-img{position:relative}
+    .card img{width:100%;height:240px;object-fit:cover;display:block}
+    .card-tag{position:absolute;top:12px;left:12px;background:#00ff88;color:#000;padding:5px 12px;border-radius:20px;font-size:0.8rem;font-weight:bold}
+    .card-body{padding:16px}
+    .card h3{color:#00ff88;font-size:1.2rem;margin-bottom:8px}
+    .card p{font-size:0.95rem;color:#bbb}
+    
+    .card iframe{width:100%;height:240px;border:none;display:block}
+    
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .service{background:#1a1a1a;padding:20px;border-radius:12px;border:1px solid #333;text-align:center;transition:0.3s}
+    .service:hover{border-color:#00ff88}
+    .service h3{color:#00ff88;font-size:1.05rem}
+    
+    .buttons{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+    .btn{background:#00ff88;color:#000;padding:15px 24px;border-radius:10px;text-decoration:none;font-weight:bold;display:flex;align-items:center;gap:8px;transition:0.3s}
+    .btn.secondary{background:#333;color:#fff}
+    .btn:hover{transform:scale(1.05)}
+    
+    footer{text-align:center;padding:25px;color:#777;border-top:1px solid #333;margin-top:50px}
+    
+    @media(max-width:768px){
+      .grid{grid-template-columns:1fr}
+      .services{grid-template-columns:1fr 1fr}
+      .card img,.card iframe{height:200px}
+      .hero h1{font-size:2rem}
+    }
+    @media(max-width:480px){
+      .services{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>IDRIS ODEJAYI</h1>
+    <p><span>Event Decorator</span> | Balloons | Birthdays | Weddings | Corporate</p>
+    <p>"Self trust is the best"</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#videos">Videos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about">
+      <p>Hi, I'm Idris 👋 A creative event decorator + digital creator based in Lagos. 
+      I turn your events into unforgettable experiences with stunning balloon decor, 
+      elegant table setups, themed backdrops, and websites that book clients for you. 
+      From intimate birthdays to luxury weddings, I bring your vision to life with attention to detail.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>My Services</h2>
+    <div class="services">
+      <div class="service"><h3>🎈 Balloon Decor</h3></div>
+      <div class="service"><h3>💍 Wedding Decor</h3></div>
+      <div class="service"><h3>🎂 Birthday Parties</h3></div>
+      <div class="service"><h3>🏢 Corporate Events</h3></div>
+      <div class="service"><h3>📸 Photo Backdrops</h3></div>
+      <div class="service"><h3>💻 Websites for Events</h3></div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>🖼️ Recent Work</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="card-img">
+          <img src="images/birthday.jpg" alt="Pastel Birthday Setup">
+          <span class="card-tag">Birthday</span>
+        </div>
+        <div class="card-body">
+          <h3>Pastel Birthday Setup</h3>
+          <p>10th Birthday balloon garland + table decor in Ikeja</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <img src="images/wedding.jpg" alt="Luxury Wedding Tables">
+          <span class="card-tag">Wedding</span>
+        </div>
+        <div class="card-body">
+          <h3>Luxury Wedding Tables</h3>
+          <p>Gold and white themed reception setup</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <img src="images/backdrop.jpg" alt="Photo Backdrop">
+          <span class="card-tag">Backdrop</span>
+        </div>
+        <div class="card-body">
+          <h3>Photo Backdrop</h3>
+          <p>Floral + balloon backdrop for photoshoot</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <img src="images/corporate.jpg" alt="Corporate Launch">
+          <span class="card-tag">Corporate</span>
+        </div>
+        <div class="card-body">
+          <h3>Corporate Launch</h3>
+          <p>Brand colors balloon arch and stage decor</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="videos">
+    <h2>📹 Video Highlights</h2>
+    <div class="grid">
+      <div class="card">
+        <iframe src="https://www.youtube.com/embed/-IMOLDv0FWw" allowfullscreen></iframe>
+        <div class="card-body">
+          <h3>Wedding Setup Timelapse</h3>
+          <p>Full decor setup in 60 seconds</p>
+        </div>
+      </div>
+      <div class="card">
+        <iframe src="https://www.youtube.com/embed/-iFqKlG6o-M" allowfullscreen></iframe>
+        <div class="card-body">
+          <h3>Balloon Garland Tutorial</h3>
+          <p>Behind the scenes of a birthday decor</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>📞 Let's Decorate Your Event</h2>
+    <div class="buttons">
+      <a href="https://wa.me/2347081190798" class="btn" target="_blank">WhatsApp Me</a>
+      <a href="tel:+2347031839173" class="btn secondary" target="_blank">Call Line 1</a>
+      <a href="tel:+2347081190798" class="btn secondary" target="_blank">Call Line 2</a>
+      <a href="mailto:mambis023@email.com" class="btn secondary" target="_blank">Email</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Idris Odejayi Decor. Lagos, Nigeria. "Self trust is the best"</p>
+  </footer>
+
+</body>
+</html>
